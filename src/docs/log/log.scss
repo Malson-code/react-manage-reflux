@@ -1,0 +1,82 @@
+.mal-login-wrap{
+  width: 370px;
+  height:340px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  animation: login 0.2s linear forwards;
+  .has-error .ant-form-explain{
+    margin-top: 2px;
+  }
+  .login-input{
+    width: 100%;
+  }
+  .forget-password{
+    float: right;
+    color: #33c3ff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .other-style{
+    margin-right: 6px;
+  }
+  .other-style-icon{
+    @extend .other-style;
+    font-size:16px;
+    cursor: pointer;
+    &:hover{
+      color: #33c3ff;
+    }
+  }
+  .log-register{
+    @extend .forget-password;
+    margin-right: 20px;
+  }
+  .login-title{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+}
+@keyframes login {
+  0%{
+    transform: translate(-175px,-170px);
+  }
+  100%{
+    transform: translate(-175px,-200px);
+  }
+}
+.login-bg{
+  height:100%;
+  width: 100%;
+  background-image: url("../../imgs/bg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #f0f2f5;
+}
+.forget-psw-wrap{
+  width: 800px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-400px,-160px);
+  .step-title{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .step-content{
+    width: 100%;
+    height:130px;
+    padding-top: 30px;
+  }
+}
+.forget-psw-top{
+  height: 48px;
+  line-height: 48px;
+  background-color: #0c4275;
+  padding-left: 20px;
+  color: #fff;
+  font-size: 30px;
+}

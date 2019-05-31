@@ -1,0 +1,80 @@
+.mal-content-layout{
+  padding-left: 8px;
+  .mal-content{
+    min-height: 200px;
+    margin: 0;
+    padding: 16px;
+    padding-right: 30px;
+    //overflow: auto;
+    //overflow-x: hidden;
+    //background-color: #fff;
+    min-width: 1000px;
+    border-top:1.6px solid #ddd;
+  }
+  .mal-breadcrumb{
+    margin: 10px 0;
+  }
+}
+.mal-header{
+  padding: 0 20px;
+  color: #fff;
+  background-color: #0c4275;
+  min-width: 550px;
+  .ant-badge{
+    color: #fff;
+  }
+  .mal-logo{
+    width: 200px;
+    height:40px;
+    line-height: 36px;
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+    margin-left: -10px;
+    text-align: left;
+    font-size:28px;
+    cursor: pointer;
+    background: url("../../imgs/logo.svg") no-repeat;
+    background-size: 28px;
+    background-position: 10px 6px;
+    padding-left: 46px;
+  }
+  .header-setting-col{
+    float: left;
+    margin: 0 4px;
+  }
+}
+.person-info{
+}
+span.admin-drop{
+  padding: 6px 30px;
+  text-align: center;
+}
+//左侧菜单
+.mal-leftmenu{
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .left-resize{
+    width: 100%;
+    height:30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+  }
+  .ant-layout-sider-trigger{
+    height: 30px;
+    background: #0c4275;
+  }
+}
+//面包屑
+.bread-cp{
+  cursor: pointer;
+  &:hover{
+    color: #0c4275;
+  }
+}
+.bread-none{
+  color: #aaa;
+}

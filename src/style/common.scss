@@ -1,0 +1,108 @@
+//form根据label size排列
+#root{
+  height: 100%;
+  min-height: 460px;
+  width:100%;
+  overflow: hidden;
+  font-family: "Microsoft YaHei UI";
+  background-color: #f0f2f5;
+  background-image: url("../imgs/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-form{
+  .ant-form-item{
+    display: flex;
+  }
+  .ant-form-item-control-wrapper {
+    flex: 1;
+  }
+}
+.flex-form-item{
+  display: flex;
+  .ant-form-item-control-wrapper {
+    flex: 1;
+  }
+}
+.ant-form{
+  .ant-form-item{
+    margin-bottom: 10px;
+  }
+}
+//按钮之间的距离
+.filter-btn{
+  width: 80px;
+  margin-top: 4px;
+}
+.table-btns{
+  margin: 12px 0;
+}
+//模块公共样式
+.modal-title{
+  font-size: 20px;
+}
+
+//antd montion public style
+.demo-content{
+  width: 100%;
+  height:100%;
+}
+//scroll bar start
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+  background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.65);
+  background-color: #aaa;
+}
+
+/*srcoll bar end*/
+/*modal center start*/
+.vertical-center-modal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-center-modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.vertical-center-modal .ant-modal {
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}
+/*modal center end*/
+.btn-margin{
+  margin-left: 6px!important;
+}
+
+.table-header-center .ant-table-thead th{
+  text-align: center;
+}
+
+//过滤条件 wrap
+.filter-wrap .ant-form-item{
+  margin-bottom: 0;
+}
